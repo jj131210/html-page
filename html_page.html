@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입출력 페이지</title>
+    <style>
+        #outputBox {
+            width: 300px;
+            height: 150px;
+            border: 2px solid black;
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>입력을 테스트하세요</h2>
+
+    <input type="text" id="userInput" placeholder="입력하세요">
+    <button onclick="displayText()">Go</button>
+
+    <div id="outputBox"></div>
+
+    <script>
+        function displayText() {
+            const input = document.getElementById('userInput').value;
+            const outputBox = document.getElementById('outputBox');
+            outputBox.innerText = input;
+        }
+    </script>
+
+</body>
+</html>
